@@ -1,10 +1,8 @@
-const Router = require('express').Router
-const testTblController = require('../controller/testtbl.controller')
-const router = new Router()
+const Router = require("express").Router;
+const testTblController = require("../controller/testtbl.controller");
+const router = new Router();
 
-router.post('/data', testTblController.createData)
-router.get('/data', testTblController.getData)
-// router.get('/filter', testTblController.getFilteredData)
-// router.get('/sorted', testTblController.getSortedData)
+router.post("/data", testTblController.createData);
+router.get("/data", testTblController.getData);
 
-module.exports = router
+module.exports = router;

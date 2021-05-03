@@ -2,7 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-top: 20vh;
   width: 100%;
   min-height: 100vh;
+}
+
+select,
+input {
+  outline: none;
+  border: none;
+  background-color: aquamarine;
+  padding: 15px;
 }

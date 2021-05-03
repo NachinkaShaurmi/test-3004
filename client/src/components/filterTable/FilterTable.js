@@ -14,7 +14,7 @@ const FilterTable = ({
   filterCondition,
   filterValue,
   handleFormSubmit,
-  handleFormReset, 
+  handleFormReset,
 }) => {
   const selectOptionCreate = (optionList) => {
     return optionList.map((option) => (
@@ -31,12 +31,6 @@ const FilterTable = ({
 
   const tableHeadOptionList = selectOptionCreate(TABLE_HEAD);
   const conditionOptionList = selectOptionCreate(CONDITION);
-
-  // const changeFilterColumnName = (value) => {
-  //   if (value === "title") return;
-  //   dispatch(setFilterColumnName(value));
-  //   console.log(value);
-  // };
 
   return (
     <div className="filter">
@@ -70,10 +64,16 @@ const FilterTable = ({
           <option value="title">Value condition</option>
           {conditionOptionList}
         </select>
-        <button className="form__el form__button form__button_filter" onClick={handleFormSubmit}>
+        <button
+          className="form__el form__button form__button_filter"
+          onClick={handleFormSubmit}
+        >
           Filter
         </button>
-        <button className="form__el form__button form__button_reset" onClick={handleFormReset}>
+        <button
+          className="form__el form__button form__button_reset"
+          onClick={handleFormReset}
+        >
           Reset
         </button>
       </form>

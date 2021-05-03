@@ -6,7 +6,9 @@ const PageNumber = ({ page, dispatch, pageAmount }) => {
   return (
     <div className="page-number">
       <button
-        className={page === 0 ? "page-number__button disabled" : "page-number__button"}
+        className={
+          page === 0 ? "page-number__button disabled" : "page-number__button"
+        }
         onClick={() => dispatch(setPage(page - 1))}
         disabled={page === 0}
       >
@@ -18,7 +20,11 @@ const PageNumber = ({ page, dispatch, pageAmount }) => {
       <div className="page-number__value">Page number - {page + 1}</div>
 
       <button
-        className={pageAmount === page + 1 ? "page-number__button disabled" : "page-number__button"}
+        className={
+          pageAmount === page + 1
+            ? "page-number__button disabled"
+            : "page-number__button"
+        }
         disabled={pageAmount === page + 1}
         onClick={() => dispatch(setPage(page + 1))}
       >
